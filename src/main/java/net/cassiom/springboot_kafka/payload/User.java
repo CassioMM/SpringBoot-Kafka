@@ -1,5 +1,8 @@
 package net.cassiom.springboot_kafka.payload;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({"id", "firstName", "lastName"})
 public class User {
 
     private int id;
